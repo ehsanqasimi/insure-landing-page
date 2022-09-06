@@ -34,8 +34,8 @@ body {
   transition: transform 0.5s;
   font-weight: 600;
   letter-spacing: 2px;
-  top: 200%;
-  box-shadow: 0 0 0 20px hsl(270deg, 9%, 17%);
+  top: 260%;
+  box-shadow: 0 0 0 30px hsl(256deg, 26%, 20%);
   background-image: url(./images/bg-pattern-mobile-nav.svg);
   background-repeat: no-repeat;
   height: 87vh;
@@ -59,10 +59,10 @@ body {
   margin: 20px;
   transition: 0.5s;
   cursor: pointer;
+  color: white;
 }
 .container .hero .header nav ul li:last-child:hover {
-  background-color: hsl(270deg, 9%, 17%);
-  color: white;
+  color: unset;
 }
 .container .hero .header nav .burger {
   display: block;
@@ -254,6 +254,11 @@ body {
   .container .hero .header nav ul li:last-child {
     border: 1px solid black;
     margin: 0;
+    color: hsl(256deg, 26%, 20%);
+  }
+  .container .hero .header nav ul li:last-child:hover {
+    color: white;
+    background-color: hsl(256deg, 26%, 20%);
   }
   .container .hero .header nav ul li {
     padding: 8px 20px;

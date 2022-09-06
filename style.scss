@@ -38,8 +38,8 @@ body {
                     transition: transform 0.5s;
                     font-weight: 600;
                     letter-spacing: 2px;
-                    top: 200%;
-                    box-shadow: 0 0 0 20px $VeryDarkViolet;
+                    top: 260%;
+                    box-shadow: 0 0 0 30px $DarkViolet;
                     background-image: url(./images/bg-pattern-mobile-nav.svg);
                     background-repeat: no-repeat;
                     height: 87vh;
@@ -66,11 +66,11 @@ body {
                         margin: 20px;
                         transition: 0.5s;
                         cursor: pointer;
+                        color: white;
                     }
 
                     li:last-child:hover {
-                        background-color: $VeryDarkViolet;
-                        color: white;
+                        color: unset;
                     }
                 }
 
@@ -291,6 +291,11 @@ body {
                         li:last-child {
                             border: 1px solid black;
                             margin: 0;
+                            color: $DarkViolet;
+                            &:hover{
+                                color: white;
+                                background-color: $DarkViolet;
+                            }
                         }
 
                         li {
