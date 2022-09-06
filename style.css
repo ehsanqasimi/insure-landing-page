@@ -1,0 +1,385 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-shadow: border-box;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  overflow-x: hidden;
+  font-size: 16px;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+}
+.container .hero .header {
+  padding: 30px;
+}
+.container .hero .header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+}
+.container .hero .header nav ul {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  color: hsl(0deg, 0%, 98%);
+  display: none;
+  background-color: hsl(256deg, 26%, 20%);
+  transition: transform 0.5s;
+  font-weight: 600;
+  letter-spacing: 2px;
+  top: 200%;
+  box-shadow: 0 0 0 20px hsl(270deg, 9%, 17%);
+  background-image: url(./images/bg-pattern-mobile-nav.svg);
+  background-repeat: no-repeat;
+  height: 87vh;
+  background-position-y: bottom;
+}
+.container .hero .header nav ul li {
+  list-style: none;
+  padding: 20px;
+  color: hsl(273deg, 4%, 51%);
+  cursor: pointer;
+  transition: all ease 0.5s;
+}
+.container .hero .header nav ul li:hover {
+  color: hsl(270deg, 9%, 17%);
+}
+.container .hero .header nav ul li:first-child {
+  margin: 20px;
+}
+.container .hero .header nav ul li:last-child {
+  border: 1px solid white;
+  margin: 20px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.container .hero .header nav ul li:last-child:hover {
+  background-color: hsl(270deg, 9%, 17%);
+  color: white;
+}
+.container .hero .header nav .burger {
+  display: block;
+}
+.container .hero .header nav .close {
+  display: none;
+}
+.container .hero .header nav .logo {
+  cursor: pointer;
+}
+.container .hero .headerContent img {
+  width: 100%;
+}
+.container .hero .headerContent .headerText {
+  margin-top: -5px;
+  text-align: center;
+  background-color: hsl(256deg, 26%, 20%);
+  padding: 50px 10px;
+  background-image: url(./images/bg-pattern-intro-left-mobile.svg);
+  background-repeat: no-repeat;
+}
+.container .hero .headerContent .headerText hr {
+  display: none;
+}
+.container .hero .headerContent .headerText h1 {
+  color: white;
+  font-family: "DM Serif Display", serif;
+  font-size: 3rem;
+}
+.container .hero .headerContent .headerText .desc {
+  color: hsl(0deg, 0%, 98%);
+  line-height: 30px;
+}
+.container .hero .headerContent .headerText button {
+  border: none;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 10px 30px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  right: 50%;
+  margin-block: 20px;
+  font-weight: 600;
+  transition: all ease 0.5s;
+  cursor: pointer;
+}
+.container .hero .headerContent .headerText button:hover {
+  background-color: white;
+  color: hsl(256deg, 26%, 20%);
+}
+.container .features {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-block: 100px;
+}
+.container .features .features-title {
+  font-family: "DM Serif Display", serif;
+  color: hsl(256deg, 26%, 20%);
+  font-size: 3rem;
+  padding-top: 30px;
+}
+.container .features .feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 50px;
+  text-align: center;
+  padding-inline: 30px;
+}
+.container .features .feature img {
+  padding: 20px;
+}
+.container .features .feature p {
+  color: hsl(273deg, 4%, 51%);
+  padding-top: 30px;
+}
+.container .features .topBorder {
+  width: 40%;
+  color: hsl(216deg, 30%, 68%);
+}
+.container .howWeWork {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 300px;
+  background-color: hsl(256deg, 26%, 20%);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px;
+  padding: 40px;
+  text-align: center;
+  gap: 40px;
+  background-image: url(./images/bg-pattern-how-we-work-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+.container .howWeWork h1 {
+  font-size: 3rem;
+  font-family: "DM Serif Display", serif;
+}
+.container .howWeWork button {
+  background-color: transparent;
+  border: 1px solid white;
+  outline: none;
+  color: white;
+  padding: 10px 30px;
+  transition: all ease 0.5s;
+  font-weight: 600;
+  cursor: pointer;
+}
+.container .howWeWork button:hover {
+  color: hsl(256deg, 26%, 20%);
+  background-color: white;
+}
+.container footer {
+  background-color: hsl(0deg, 0%, 98%);
+  background-image: url(./images/bg-pattern-footer-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  gap: 30px;
+  padding-block: 130px;
+}
+.container footer .footer-header {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.container footer .footer-header .socialIcons {
+  display: flex;
+  gap: 10px;
+}
+.container footer hr {
+  width: 90%;
+  border: 1px solid hsl(216deg, 30%, 68%);
+}
+.container footer .liContainer .title {
+  color: hsl(273deg, 4%, 51%);
+  font-weight: 700;
+  padding-block: 20px;
+}
+.container footer .liContainer li {
+  list-style: none;
+  padding: 5px;
+}
+
+@media screen and (min-width: 900px) {
+  .container .hero .header {
+    padding: 0;
+    padding-inline: 100px;
+    padding-block: 20px;
+  }
+  .container .hero .header nav {
+    align-items: center;
+  }
+  .container .hero .header nav img {
+    height: 20px;
+  }
+  .container .hero .header nav ul {
+    position: static;
+    background-color: transparent;
+    display: flex;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    top: 0%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    background-image: none;
+    box-shadow: none;
+    color: black;
+    padding: 0;
+  }
+  .container .hero .header nav ul li:first-child {
+    margin: 0;
+  }
+  .container .hero .header nav ul li:last-child {
+    border: 1px solid black;
+    margin: 0;
+  }
+  .container .hero .header nav ul li {
+    padding: 8px 20px;
+    margin: 0;
+  }
+  .container .hero .header nav .burger {
+    display: none;
+  }
+  .container .hero .header nav .close {
+    display: none;
+  }
+  .container .hero .headerContent {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    padding-inline: 100px;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    background-color: hsl(256deg, 26%, 20%);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: top right;
+    background-image: url(./images/bg-pattern-intro-right-desktop.svg);
+  }
+  .container .hero .headerContent img {
+    width: 90%;
+    margin-bottom: -100px;
+    margin-top: 100px;
+  }
+  .container .hero .headerContent .headerText {
+    width: 100%;
+    text-align: start;
+    margin-top: 0;
+    padding-block: 100px;
+    background-image: none;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .container .hero .headerContent .headerText hr {
+    display: block;
+    width: 200px;
+    background-color: white;
+    margin-bottom: 40px;
+  }
+  .container .hero .headerContent .headerText h1 {
+    font-size: 5rem;
+    line-height: 80px;
+  }
+  .container .hero .headerContent .headerText .desc {
+    font-size: 20px;
+  }
+  .container .features {
+    align-items: flex-start;
+    padding-top: 100px;
+    padding-inline: 100px;
+  }
+  .container .features .topBorder {
+    width: 200px;
+  }
+  .container .features .features-title {
+    font-size: 4rem;
+  }
+  .container .features .features-container {
+    display: flex;
+    margin-top: 80px;
+    gap: 50px;
+  }
+  .container .features .features-container .feature {
+    align-items: flex-start;
+    text-align: start;
+    gap: 30px;
+    padding: 0;
+  }
+  .container .features .features-container .feature img {
+    padding: 0;
+  }
+  .container .features .features-container .feature p {
+    padding: 0;
+  }
+  .container .howWeWork {
+    margin-block: 150px;
+    width: auto;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    margin-inline: 100px;
+    background-size: contain;
+    background-position: right top;
+    background-image: url(./images/bg-pattern-how-we-work-desktop.svg);
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px;
+    text-align: start;
+    gap: 0;
+  }
+  .container .howWeWork h1 {
+    width: 47%;
+    font-size: 4rem;
+    word-wrap: break-word;
+  }
+  .container footer {
+    background-image: url(./images/bg-pattern-footer-desktop.svg);
+    background-size: 50%;
+    padding-inline: 100px;
+  }
+  .container footer hr {
+    width: 100%;
+    background-color: hsl(216deg, 30%, 68%);
+    height: 1px;
+  }
+  .container footer .footer-header {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .container footer .company {
+    display: flex;
+    width: 100%;
+  }
+  .container footer .company .liContainer {
+    text-align: start;
+    margin-right: 20%;
+  }
+  .container footer .company .liContainer li {
+    padding-block: 5px;
+  }
+}/*# sourceMappingURL=style.css.map */
